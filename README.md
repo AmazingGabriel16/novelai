@@ -22,4 +22,5 @@ I do not claim to be the owner of Novel AI or be in any way associated with them
 Thanks to:
 EncryptedGuy (https://www.youtube.com/watch?v=nhVViwmc3lg)
 - Solving the the AJAX problem.
+
 Another person that I learnt how to do the webview thing on, but unfortuntely I have completely forgotten who as trying to search the person up comes up with different people.

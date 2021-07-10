@@ -9,6 +9,7 @@ THIS IS A FAN MADE ITEM AND NOT OFFICIAL!!!
 # How to download
 
 Find it in the releases page
+
 [Releases](https://github.com/AmazingGabriel16/novelai/releases)
 
 Alternative: novelai > app > release > Novel AI.apk

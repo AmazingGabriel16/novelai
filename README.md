@@ -8,7 +8,8 @@ THIS IS A FAN MADE ITEM AND NOT OFFICIAL!!!
 
 # How to download
 
-Permalink: https://github.com/AmazingGabriel16/novelai/blob/ec31aeb8b7aa36480088467bcdc9ca3c0ec49ea4/app/release/Novel%20AI.apk
+Find it in the releases page
+[Releases](https://github.com/AmazingGabriel16/novelai/releases)
 
 Alternative: novelai > app > release > Novel AI.apk
 

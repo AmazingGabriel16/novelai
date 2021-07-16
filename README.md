@@ -18,7 +18,7 @@ Alternative: novelai > app > release > Novel AI.apk
 
 Novel AI Discord: https://discord.gg/novelai
 
-I do not claim to be the owner of Novel AI or be in any way associated with them, the owner would be Kuru-chan uWu. I am simply just a fan and wanted something similar to what AID had done, hence made this small webview APK in hopes to make things look cleaner at the very least as not everybody knows how to make the web apps via their browsers, it is ofetn slow due to it being bloated, and this is smaller if all you wanted was Novel AI.
+I do not claim to be the owner of Novel AI or be in any way associated with them, the owner would be Kuru-chan uWu. I am simply just a fan and wanted something similar to what AID had done, hence made this small webview APK in hopes to make things look cleaner at the very least as not everybody knows how to make the web apps via their browsers, it is often slow due to it being bloated, and this is smaller if all you wanted was Novel AI.
 
 # Credits
 Thanks to:

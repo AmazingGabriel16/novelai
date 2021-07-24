@@ -14,7 +14,13 @@ THIS IS A FAN MADE ITEM AND NOT OFFICIAL!!!
 
 2) Download the file that has the extenstion ".apk".
 
-Alternative: novelai > app > release > Novel AI.apk
+#
+
+Attention! The direct dowload version is the latest possible version from the Git Hub repository and may be unstable. Please go to [releases](https://github.com/AmazingGabriel16/novelai/releases) for stable builds.
+
+[Direct download](https://github.com/AmazingGabriel16/novelai/blob/95c75785ec13274242761b68579597b1c1ff848c/app/release/Novel%20AI.apk)
+
+[Other versions](https://github.com/AmazingGabriel16/novelai/tree/main/versions)
 
 # How to install
 
@@ -26,6 +32,10 @@ Novel AI Discord: https://discord.gg/novelai
 
 I do not claim to be the owner of Novel AI or be in any way associated with them, the owner would be Kuru-chan uWu. I am simply just a fan and wanted something similar to what AID had done, hence made this small webview APK in hopes to make things look cleaner at the very least as not everybody knows how to make the web apps via their browsers, it is often slow due to it being bloated, and this is smaller if all you wanted was Novel AI.
 
+# Changelog
+
+[Changelog](https://github.com/AmazingGabriel16/novelai/blob/95c75785ec13274242761b68579597b1c1ff848c/changelog.txt)
+
 # Code distribution
 
 This project is open source under the MIT license.
@@ -34,7 +44,11 @@ Help keep the Novel AI community alive by helping to keep the code alive by fork
 
 # Credits
 Thanks to:
+
 [EncryptedGuy](https://www.youtube.com/channel/UCSebU7Uh-dV-HPLvFAHw4xw)
-- Solving the the AJAX problem. [Link](https://www.youtube.com/watch?v=nhVViwmc3lg)
+- Solving the the AJAX problem. [Video](https://www.youtube.com/watch?v=nhVViwmc3lg)
+
+[Sabith Pkc Mnr](https://www.youtube.com/channel/UCBP7Brr6uhUr1DtgflsjoOg)
+- Helping to construct the DownloadListener. [Video](https://www.youtube.com/watch?v=n-iXcR7MHgw)
 
 Another person that I learnt how to do the webview thing on, but unfortuntely I have completely forgotten who as trying to search the person up comes up with different people.

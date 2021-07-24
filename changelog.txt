@@ -1,0 +1,16 @@
+Version 1.0.1
+
++ Added hardware acceleration on the application level.
++ Added external storage, read and write permissions for the download and export of stories.
+
+- Removed unsued colour values in the file "colors.xml". We are only using the "nai_theme" as the default colour scheme.
+
+Issues
+
+- The program is able to downlaod files such as PDFs via the webview element, but will crash when you click on the downlaod button for the stories inside of the Novel AI website. This may be due to the file type. Tested on the Pixel 3A API 30 x86.
+
+Version 1
+
++ Added Java Script suppourt in the browser element.
++ Added the browser element to be able to view the website.
++ Added AJAX suppourt.

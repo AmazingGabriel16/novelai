@@ -1,3 +1,10 @@
+Version 1.2
+
++ Added a new class, "customWebViewClient" with the method "onReceivedError". This will handle the SSL error that was known to cause NAI webpage loading issues, and will automatically proceed using "handleer.proceed()".
+
+- Changed variable "mywebView" to "myWebView" to comply with camel case format.
+
+
 Version 1.1
 
 + Added hardware acceleration on the application level.

@@ -1,71 +1,61 @@
 package com.example.novelai;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.DownloadManager;
-import android.graphics.Bitmap;
-import android.net.Uri;
+import android.net.http.SslError;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.WindowInsetsController;
 import android.view.WindowManager;
-import android.webkit.DownloadListener;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private WebView mywebView;
+    private WebView myWebView;
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Status bar removal
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        // Below is deprecated
+        // Try https://developer.android.com/training/system-ui/immersive#java
+        // See also https://developer.android.com/reference/android/view/WindowInsetsController
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //getActionBar().setDisplayHomeAsUpEnabled(false);
+
+        //WindowInsetsController.BEHAVIOR_SHOW_BARS_BY_SWIPE
 
         // Main webview content
         setContentView(R.layout.activity_main);
-        mywebView=(WebView) findViewById(R.id.webview);
-        mywebView.setWebViewClient(new WebViewClient());
-        mywebView.getSettings().setDomStorageEnabled(true);
-        mywebView.loadUrl("https://www.novelai.net");
-        //mywebView.loadUrl("https://www.google.com");
-        WebSettings webSettings=mywebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        myWebView = (WebView) findViewById(R.id.webview);
 
-        // Attempt at the download stuff
-        mywebView.setDownloadListener(new DownloadListener() {
-            @Override
-            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
-                DownloadManager.Request myRequest = new DownloadManager.Request(Uri.parse(url));
-                myRequest.allowScanningByMediaScanner();
-                myRequest.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                Toast.makeText(MainActivity.this, "SECTOR 1", Toast.LENGTH_SHORT).show();
-                DownloadManager myManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
-                myManager.enqueue(myRequest);
+        // Setting up a new webview client to help in fixing SSL issue
 
-                Toast.makeText(MainActivity.this, "Story downloading...", Toast.LENGTH_SHORT).show();
-            }
-        });
+        WebSettings wS = myWebView.getSettings();
+        wS.setDomStorageEnabled(true);
+        wS.setJavaScriptEnabled(true);
+
+        // Setting up a new webview client to help in fixing SSL issue
+        myWebView.setWebViewClient(new customWebViewClient());
+
+        // Loading target URL
+        myWebView.loadUrl("https://www.novelai.net");
     }
 
-    public class mywebClient extends WebViewClient{
+    public static class customWebViewClient extends WebViewClient {
         @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon){
-            super.onPageStarted(view,url,favicon);
-        }
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view,String url) {
-            view.loadUrl(url);
-            return true;
+        public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+            handler.proceed();
         }
     }
 
     @Override
     public void onBackPressed(){
-        if(mywebView.canGoBack()) {
-            mywebView.goBack();
+        if(myWebView.canGoBack()) {
+            myWebView.goBack();
         }
         else{
             super.onBackPressed();

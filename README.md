@@ -48,7 +48,15 @@ Thanks to:
 [EncryptedGuy](https://www.youtube.com/channel/UCSebU7Uh-dV-HPLvFAHw4xw)
 - Solving the the AJAX problem. [Video](https://www.youtube.com/watch?v=nhVViwmc3lg)
 
-[Sabith Pkc Mnr](https://www.youtube.com/channel/UCBP7Brr6uhUr1DtgflsjoOg)
+[Sabith Pkc Mnr](https://github.com/SabithPkcMnr)
 - Helping to construct the DownloadListener. [Video](https://www.youtube.com/watch?v=n-iXcR7MHgw)
 
+[Etornam Sunu](https://github.com/RegNex)
+- Helping to solve the SSL problem. [Video](https://www.youtube.com/watch?v=JNtFTwZyy-4)
+
 Another person that I learnt how to do the webview thing on, but unfortuntely I have completely forgotten who as trying to search the person up comes up with different people.
+
+# More
+Want to see more?
+
+Here's the [Unofficial Novel AI Knowledge Base](https://naidb.miraheze.org/wiki/Main_Page)

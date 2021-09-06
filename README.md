@@ -20,7 +20,7 @@ Attention! The direct dowload version is the latest possible version from the Gi
 
 [Direct download](https://github.com/AmazingGabriel16/novelai/blob/95c75785ec13274242761b68579597b1c1ff848c/app/release/Novel%20AI.apk)
 
-[Other versions](https://github.com/AmazingGabriel16/novelai/tree/main/versions)
+[Other versions](https://github.com/AmazingGabriel16/novelai/tree/archive)
 
 # How to install
 

@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NovelAI"
         android:usesCleartextTraffic="true"
-        tools:targetApi="m">
-        <activity android:name=".MainActivity">
+        tools:targetApi="m"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

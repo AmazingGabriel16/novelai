@@ -2,10 +2,11 @@ package com.example.novelai;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.net.http.SslError;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
@@ -15,6 +16,7 @@ import android.webkit.WebViewClient;
 public class MainActivity extends AppCompatActivity {
     private WebView myWebView;
 
+    @SuppressLint("SetJavaScriptEnabled")
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {

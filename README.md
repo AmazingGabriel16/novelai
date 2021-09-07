@@ -18,7 +18,7 @@ THIS IS A FAN MADE ITEM AND NOT OFFICIAL!!!
 
 Attention! The direct dowload version is the latest possible version from the Git Hub repository and may be unstable. Please go to [releases](https://github.com/AmazingGabriel16/novelai/releases) for stable builds.
 
-[Direct download](https://github.com/AmazingGabriel16/novelai/blob/95c75785ec13274242761b68579597b1c1ff848c/app/release/Novel%20AI.apk)
+[Direct download](https://github.com/AmazingGabriel16/novelai/blob/main/app/release/Novel%20AI.apk)
 
 [Other versions](https://github.com/AmazingGabriel16/novelai/tree/archive)
 

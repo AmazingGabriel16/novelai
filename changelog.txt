@@ -1,3 +1,9 @@
+Version 1.3
+
+- Removed unused colours in colors.xml.
+- Removed the green drawable thing when you tap on the app to launch it.
+- Some other code cleanup that I forgot to take note off
+
 Version 1.2
 
 + Added a new class, "customWebViewClient" with the method "onReceivedError". This will handle the SSL error that was known to cause NAI webpage loading issues, and will automatically proceed using "handleer.proceed()".
